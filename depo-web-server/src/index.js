@@ -1,5 +1,6 @@
 // Requiring some dependencies 
 const express = require("express");
+const path = require('path');
 const { StartRouter } = require("./router.js");
 
 // Intialiazing a new express server instance
@@ -7,8 +8,12 @@ const server = express();
 
 // Setting the view engine to ejs
 server.set('view engine', 'ejs');
+
 // Fixing some stupid bug related to paths
 server.set('views', __dirname + '/views'); 
+
+// Defining the assets path
+server.use(express.static(path.join(__dirname, 'public')));
 
 // Starting the router in the server
 StartRouter(server);
