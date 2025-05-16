@@ -1,0 +1,27 @@
+{
+  "name": "depodorde-search-engine",
+  "version": "1.0.0",
+  "description": "um mecanismo de busca web simplificado desenvolvido para fins educacionais e de portfólio.",
+  "main": "boot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pardoardo/Depodorde.git"
+  },
+  "keywords": [
+    "search-engine",
+    "web"
+  ],
+  "author": "Eduardo Bezerra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pardoardo/Depodorde/issues"
+  },
+  "homepage": "https://github.com/Pardoardo/Depodorde#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}
